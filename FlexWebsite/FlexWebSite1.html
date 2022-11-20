@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebPage</title>
+
+  <style>
+    *{
+      font-size: 30px;
+      box-sizing: border-box;
+      background-color:cornsilk;
+    }
+    body{
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+      margin: 0;
+    }
+    #main{
+      display: flex;
+      flex: 1;
+    }
+    article{
+      flex: 2;
+      order: 1;
+    }
+    aside{
+      flex: 1;
+      order: 2;
+      flex:20vh;
+      background-color: rgb(114, 103, 123);
+    }
+    nav{
+      flex: 1;
+      order: 3;
+      
+      background-color: aquamarine ;
+      flex:20vh;
+    }
+    header,footer{
+      background-color: yellowgreen;
+      height: 10vh;
+      
+    }
+    header, footer, article, nav, aside {
+    padding: 1em;
+  }
+
+  </style>
+</head>
+<body>
+  <header>HEADER</header>
+  <div id="main">
+    <article>ARTICAl</article>
+    <aside>ASIDE</aside>
+    <nav>NAV</nav>
+  </div>
+  <footer>FOOTER</footer>
+</body>
+</html>
